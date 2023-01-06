@@ -1,0 +1,39 @@
+.header {
+  padding: 30px 15px;
+  background-color: #91e4eb;
+}
+
+.nav,
+.list-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 120px;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: purple;
+}
+
+.list-nav .item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.nav-link {
+  font-size: 19px;
+  font-weight: 600;
+  color: gray;
+
+  &.active {
+    color: black;
+  }
+
+  &:hover:not(.active),
+  &:focus-visible:not(.active) {
+    color: black;
+  }
+}

@@ -1,0 +1,18 @@
+.go-back-link {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.more-info {
+  margin-bottom: 30px;
+}
+
+.list-more-info {
+  padding-left: 20px;
+  .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
