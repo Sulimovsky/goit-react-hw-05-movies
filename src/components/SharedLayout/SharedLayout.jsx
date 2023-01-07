@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import Loader from 'components/common/Loader/Loader';
 import './SharedLayout.scss';
@@ -8,9 +8,9 @@ const SharedLayout = () => {
     <>
       <header className="header">
         <nav className="nav">
-          <a href="/" className="logo">
+          <Link to="/" className="logo">
             My favourite film
-          </a>
+          </Link>
           <ul className="list-nav">
             <li className="item">
               <NavLink to="/" end className="nav-link">
